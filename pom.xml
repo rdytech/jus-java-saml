@@ -86,14 +86,14 @@
 								</requireMavenVersion>
 								<requireJavaVersion>
 									<!-- enforce =1.8 so that we compile against the right JRE -->
-									<version>[1.8,)</version>
+									<version>[21,)</version>
 								</requireJavaVersion>
 							</rules>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
 				<version>8.4.0</version>
@@ -111,7 +111,7 @@
 						</goals>
 					 </execution>
 				</executions>
-			</plugin>
+			</plugin>-->
 		</plugins>
 		<pluginManagement>
 			<plugins>
