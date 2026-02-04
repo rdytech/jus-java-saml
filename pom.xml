@@ -65,6 +65,33 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	    <repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+	        <id>jus-repo-releases</id>
+	        <name>Justice Releases Repository</name>
+	        <url>http://nexus.mcgirrtech.com:8081/repository/maven-releases/</url>
+	    </repository>
+	    <repository>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+	        <id>jus-repo-snapshots</id>
+	        <name>Justice Snapshots Repository</name>
+	        <url>http://nexus.mcgirrtech.com:8081/repository/maven-snapshots/</url>
+	    </repository>
+	</repositories>
 
 	<build>
 		<plugins>
@@ -141,19 +168,19 @@
 	</build>
 
 	<distributionManagement>
-		<repository>
-			<id>sonatype-nexus-staging</id>
-			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-		</snapshotRepository>
+	    <repository>
+	        <id>jus-repo-releases</id>
+	        <name>Justice Releases Repository</name>
+	        <url>http://nexus.mcgirrtech.com:8081/repository/maven-releases/</url>
+	    </repository>
+	    <snapshotRepository>
+	        <id>jus-repo-snapshots</id>
+	        <name>Justice Snapshots Repository</name>
+	        <url>http://nexus.mcgirrtech.com:8081/repository/maven-snapshots/</url>
+	    </snapshotRepository>
 	</distributionManagement>
-
-	<scm>
+	
+	<!--<scm>
 		<connection>scm:git:git@github.com:saml-toolkit/java-saml.git</connection>
 		<developerConnection>scm:git:git@github.com:saml-toolkit/java-saml.git</developerConnection>
 		<url>https://github.com/saml-toolkit/java-saml</url>
@@ -174,7 +201,7 @@
 			<url>https://github.com/pitbulk</url>
 			<organization>SAML Toolkit</organization>
 		</developer>
-	</developers>
+	</developers>-->
 
 	<profiles>
 		<profile>
