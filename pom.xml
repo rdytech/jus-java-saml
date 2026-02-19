@@ -180,14 +180,14 @@
 	    </snapshotRepository>
 	</distributionManagement>
 	
-	<!--<scm>
-		<connection>scm:git:git@github.com:saml-toolkit/java-saml.git</connection>
-		<developerConnection>scm:git:git@github.com:saml-toolkit/java-saml.git</developerConnection>
-		<url>https://github.com/saml-toolkit/java-saml</url>
+	<scm>
+		<connection>scm:git:git@github.com:rdytech/jus-java-saml.git</connection>
+		<developerConnection>scm:git:git@github.com:rdytech/jus-java-saml.git</developerConnection>
+		<url>https://github.com/rdytech/jus-java-saml</url>
 		<tag>HEAD</tag>
 	</scm>
 
-	<licenses>
+	<!--<licenses>
 		<license>
 			<name>MIT License</name>
 			<url>https://opensource.org/licenses/MIT</url>
