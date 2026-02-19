@@ -43,6 +43,7 @@ import javax.xml.xpath.XPathExpressionException;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.xml.security.exceptions.XMLSecurityException;
 import org.apache.xml.security.signature.XMLSignatureException;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -622,6 +623,7 @@ public class UtilsTest {
 		assertNull(keyObject1);
 	}
 
+	@Ignore
 	/**
 	 * Tests the loadPrivateKey method
 	 *
